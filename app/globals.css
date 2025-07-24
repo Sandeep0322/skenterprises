@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FF6F00;
+  --secondary: #1565C0;
+  --accent: #424242;
+  --background: #FAFAFA;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#FAFAFA] text-[#424242] font-roboto;
+  }
+  
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#FF6F00] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#E65100] transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#1565C0] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D47A1] transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .card-hover {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2;
+  }
+  
+  .service-card {
+    @apply bg-white rounded-xl shadow-lg p-8 border border-gray-100 card-hover;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .badge-orange {
+    @apply badge bg-[#FF6F00] text-white;
+  }
+  
+  .badge-blue {
+    @apply badge bg-[#1565C0] text-white;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 1s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
