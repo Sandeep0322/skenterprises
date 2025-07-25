@@ -26,11 +26,11 @@ export default function Home() {
       <Hero />
       <div id="services" className="space-y-24 py-16">
         <CourierService onContactClick={() => openContactModal('Courier')} />
-        <PorterService onContactClick={() => openContactModal('Porter')} />
         <WaterSupplyService onContactClick={() => openContactModal('Water Supply')} />
+        <PorterService onContactClick={() => openContactModal('Porter')} />
       </div>
       <Footer />
-      <ContactModal 
+      <ContactModal
         isOpen={contactModal.isOpen}
         onClose={closeContactModal}
         service={contactModal.service}

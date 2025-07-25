@@ -21,21 +21,21 @@ export default function Header() {
               SK<span className="text-[#1565C0]">Enterprises</span>
             </div>
           </div>
-          
+
           <nav className="hidden md:flex space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection('home')}
               className="text-[#424242] hover:text-[#FF6F00] transition-colors duration-300 font-medium"
             >
               Home
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('services')}
               className="text-[#424242] hover:text-[#FF6F00] transition-colors duration-300 font-medium"
             >
               Services
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-[#424242] hover:text-[#FF6F00] transition-colors duration-300 font-medium"
             >
@@ -56,19 +56,19 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <button 
+            <button
               onClick={() => scrollToSection('home')}
               className="block px-3 py-2 text-[#424242] hover:text-[#FF6F00] w-full text-left"
             >
               Home
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('services')}
               className="block px-3 py-2 text-[#424242] hover:text-[#FF6F00] w-full text-left"
             >
               Services
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="block px-3 py-2 text-[#424242] hover:text-[#FF6F00] w-full text-left"
             >
