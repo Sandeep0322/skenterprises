@@ -12,7 +12,7 @@ export default function Footer() {
               SK<span className="text-[#FF6F00]">Enterprises</span>
             </div>
             <p className="text-gray-300 mb-4">
-              Your trusted partner for courier, porter, and water supply services. 
+              Your trusted partner for courier, porter, and water supply services.
               Delivering excellence with speed and reliability.
             </p>
             <div className="flex space-x-4">
@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-montserrat font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-gray-300">
@@ -36,28 +36,27 @@ export default function Footer() {
               <li className="hover:text-[#FF6F00] transition-colors cursor-pointer">Bulk Orders</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-montserrat font-semibold text-lg mb-4">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="text-[#FF6F00]" size={20} />
-                <span className="text-gray-300">+91 9876543210</span>
+                <span className="text-gray-300">+91 9962497979</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-[#FF6F00]" size={20} />
-                <span className="text-gray-300">info@skenterprises.com</span>
+                <span className="text-gray-300">rajkumar9561@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="text-[#FF6F00] mt-1" size={20} />
                 <span className="text-gray-300">
-                  123 Business Street,<br />
-                  T. Nagar, Chennai - 600017
+                  Under Ground Floor, <br />Old No 73, Shop No 108, <br /> Sir Thyagaraya Rd, Chennai, Tamil Nadu 600017
                 </span>
               </div>
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-montserrat font-semibold text-lg mb-4">Service Areas</h3>
             <div className="space-y-2 text-gray-300">
@@ -80,7 +79,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-600 mt-12 pt-8 text-center">
           <p className="text-gray-400">
             © 2025 SKEnterprises. All rights reserved. Built with excellence for your logistics needs.
